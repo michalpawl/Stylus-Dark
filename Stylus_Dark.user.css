@@ -15,7 +15,7 @@
 @var            checkbox vCorners 'Round corners' 1
 ==/UserStyle== */
 
-@-moz-document url-prefix("moz-extension://"), url-prefix("chrome-extension://")
+@-moz-document url-prefix("moz-extension://0f32b90c-845b-4ea4-a328-c62c06ec4292")
 {
   #stylus body,
   #notes, input, select,
@@ -133,7 +133,7 @@
       margin-bottom: 1px;
     }
 
-    button
+    button:not(.install)
     {
       color: #EEE !important;
       background: linear-gradient(#777 6%, #505050 55%, #222 55%, #111) !important;
@@ -150,13 +150,13 @@
       color: graytext !important;
     }
 
-    button:hover
+    button:not(.install):hover
     {
       color: #FFF !important;
       background: linear-gradient(#888 6%, #555 55%, #333 55%, #222) !important;
     }
 
-    button:active
+    button:not(.install):active
     {
       color: #DDD !important;
       background: linear-gradient(#505050 6%, #333 55%, #1B1B1B 55%, #111) !important;
