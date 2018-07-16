@@ -15,7 +15,7 @@
 @var            checkbox vCorners 'Round corners' 1
 ==/UserStyle== */
 
-@-moz-document url-prefix("moz-extension://0f32b90c-845b-4ea4-a328-c62c06ec4292")
+@-moz-document url-prefix("moz-extension://"),  url-prefix("chrome-extension://")
 {
   #stylus body,
   #notes, input, select,
