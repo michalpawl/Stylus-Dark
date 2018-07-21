@@ -148,7 +148,7 @@
       padding-right: 3px !important;
     }
 
-    #stylus button[disabled]
+    #stylus button:not(.install)[disabled]
     {
       pointer-events: none;
       color: graytext !important;
