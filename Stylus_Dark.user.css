@@ -89,7 +89,7 @@
     color: #000
   }
 
-  #header
+  #header, .header
   {
     border-color: #555
   }
