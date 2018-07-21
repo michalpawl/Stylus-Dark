@@ -18,7 +18,9 @@
 @-moz-document url-prefix("moz-extension://"),  url-prefix("chrome-extension://")
 {
   #stylus body,
-  #notes, input, select,
+  #notes,
+  #stylus input,
+  #stylus select,
   #stylus-popup > #installed
   {
     background-color: #111 !important
@@ -62,15 +64,17 @@
     background-color: rgba(255, 255, 255, .05)
   }
 
-  a:hover,
+  #stylus a:hover,
   #confirm > div
   {
     color: #FFF !important
   }
 
-  html,
+  #stylus,
   #stylus body,
-  input, select, a
+  #stylus input,
+  #stylus select,
+  #stylus a
   {
     color: #CCC !important
   }
@@ -95,7 +99,7 @@
     border: none
   }
 
-  input, select
+  #stylus input, #stylus select
   {
     border: 1px inset #666 !important;
   }
@@ -108,13 +112,13 @@
       overflow: hidden;
     }
 
-    input, select
+    #stylus input, #stylus select
     {
       border-radius: 2px;
     }
   }
 
-  select
+  #stylus select
   {
     padding-top: 1px
   }
@@ -133,7 +137,7 @@
       margin-bottom: 1px;
     }
 
-    button:not(.install)
+    #stylus button:not(.install)
     {
       color: #EEE !important;
       background: linear-gradient(#777 6%, #505050 55%, #222 55%, #111) !important;
@@ -144,19 +148,19 @@
       padding-right: 3px !important;
     }
 
-    button[disabled]
+    #stylus button[disabled]
     {
       pointer-events: none;
       color: graytext !important;
     }
 
-    button:not(.install):hover
+    #stylus button:not(.install):hover
     {
       color: #FFF !important;
       background: linear-gradient(#888 6%, #555 55%, #333 55%, #222) !important;
     }
 
-    button:not(.install):active
+    #stylus button:not(.install):active
     {
       color: #DDD !important;
       background: linear-gradient(#505050 6%, #333 55%, #1B1B1B 55%, #111) !important;
@@ -165,20 +169,20 @@
       padding-left: 5px !important;
     }
 
-    .danger button:first-child,
+    #stylus .danger button:first-child,
     #stylus-popup > #confirm button:first-child
     {
       background: linear-gradient( #b77 15%, #905050 55%, #900100 55%, #640100) !important;
       border-color: #400;
     }
 
-    .danger button:first-child:hover,
+    #stylus .danger button:first-child:hover,
     #stylus-popup > #confirm button:first-child:hover
     {
       background: linear-gradient(#c77 6%, #955 55%, #a00200 55%, #740200) !important;
     }
 
-    .danger button:first-child:active,
+    #stylus .danger button:first-child:active,
     #stylus-popup > #confirm button:first-child:active
     {
       background: linear-gradient(#922 6%, #722 55%, #700 55%, #400) !important;
@@ -187,7 +191,7 @@
 
   if vButtons=='inverted'
   {
-    button:not(.install)
+    #stylus button:not(.install)
     {
       filter: invert(1)
     }
