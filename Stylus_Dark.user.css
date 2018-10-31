@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Dark
 @namespace      michalpawl
-@version        0.1.1
+@version        0.1.2
 @description    Dark Stylus
 @author         Michalpawl
 @preprocessor   stylus
@@ -15,228 +15,234 @@
 @var            checkbox vCorners 'Round corners' 1
 ==/UserStyle== */
 
-@-moz-document url-prefix("moz-extension://"),  url-prefix("chrome-extension://")
+@-moz-document url-prefix("moz-extension://"), url-prefix("chrome-extension://")
 {
-  #stylus body,
-  #notes,
-  #stylus input,
-  #stylus select,
-  #stylus-popup > #installed
-  {
-    background-color: #111 !important
-  }
+	#stylus body,
+	#notes,
+	#stylus input,
+	#stylus select,
+	#stylus-popup > #installed
+	{
+		background-color: #111 !important
+	}
 
-  #header,
-  #help-popup,
-  .CodeMirror-hints,
-  .blocked-info,
-  #stylus > #stylus-popup,
-  #hotkey-info div,
-  #installed div:hover,
-  #message-box > div
-  {
-    background-color: #222 !important
-  }
+	#header,
+	#help-popup,
+	.CodeMirror-hints,
+	.blocked-info,
+	#stylus > #stylus-popup,
+	#hotkey-info div,
+	#installed div:hover,
+	#message-box > div
+	{
+		background-color: #222 !important
+	}
 
-  #hotkey-info div:last-child,
-  #confirm > div
-  {
-    background-color: #333 !important
-  }
+	#hotkey-info div:last-child,
+	#confirm > div
+	{
+		background-color: #333 !important
+	}
 
-  #confirm > div
-  {
-    border-color: black
-  }
+	#confirm > div
+	{
+		border-color: black
+	}
 
-  #message-box-title
-  {
-    background-color: #1B4E4E
-  }
+	#message-box-title
+	{
+		background-color: #1B4E4E
+	}
 
-  #help-popup .title
-  {
-    background-color: rgba(255, 255, 255, .1)
-  }
+	#help-popup .title
+	{
+		background-color: rgba(255, 255, 255, .1)
+	}
 
-  #message-box-buttons
-  {
-    background-color: rgba(255, 255, 255, .05)
-  }
+	#message-box-buttons
+	{
+		background-color: rgba(255, 255, 255, .05)
+	}
 
-  #stylus a:hover,
-  #confirm > div
-  {
-    color: #FFF !important
-  }
+	#stylus a:hover,
+	#confirm > div
+	{
+		color: #FFF !important
+	}
 
-  #stylus,
-  #stylus body,
-  #stylus input,
-  #stylus select,
-  #stylus a
-  {
-    color: #CCC !important
-  }
+	#stylus,
+	#stylus body,
+	#stylus input,
+	#stylus select,
+	#stylus a
+	{
+		color: #CCC !important
+	}
 
-  .Codemirror-hint
-  {
-    color: #CCC
-  }
+	.Codemirror-hint
+	{
+		color: #CCC
+	}
 
-  #confirm
-  {
-    color: #000
-  }
+	#confirm
+	{
+		color: #000
+	}
 
-  #header, .header
-  {
-    border-color: #555
-  }
+	#header,
+	.header
+	{
+		border-color: #555
+	}
 
-  #hotkey-info div
-  {
-    border: none
-  }
+	#hotkey-info div
+	{
+		border: none
+	}
 
-  #stylus input, #stylus select
-  {
-    border: 1px inset #666 !important;
-  }
+	#stylus input,
+	#stylus select
+	{
+		border: 1px inset #666 !important;
+	}
 
-  if vCorners
-  {
-    .CodeMirror, #help-popup, #message-box > div, #confirm > div
-    {
-      border-radius: 3px;
-      overflow: hidden;
-    }
+	if vCorners
+	{
+		.CodeMirror,
+		#help-popup,
+		#message-box > div,
+		#confirm > div
+		{
+			border-radius: 3px;
+			overflow: hidden;
+		}
 
-    #stylus input, #stylus select
-    {
-      border-radius: 2px;
-    }
-  }
+		#stylus input,
+		#stylus select
+		{
+			border-radius: 2px;
+		}
+	}
 
-  #stylus select
-  {
-    padding-top: 1px
-  }
+	#stylus select
+	{
+		padding-top: 1px
+	}
 
-  if vButtons=='fancy'
-  {
-    .applies-value,
-    .remove-applies-to,
-    .test-regexp
-    {
-      margin-right: 3px
-    }
+	if vButtons=='fancy'
+	{
+		.applies-value,
+		.remove-applies-to,
+		.test-regexp
+		{
+			margin-right: 3px
+		}
 
-    #help-popup button
-    {
-      margin-bottom: 1px;
-    }
+		#help-popup button
+		{
+			margin-bottom: 1px;
+		}
 
-    #stylus button:not(.install)
-    {
-      color: #EEE !important;
-      background: linear-gradient(#777 6%, #505050 55%, #222 55%, #111) !important;
-      border: 1px solid #222 !important;
-      border-radius: 2px;
-      box-shadow: 0px 0px 0px 1px rgba(255,255,255,.25), inset 1px 1px 0px 0px #DDD, inset 0px 0px 1px 0px #666;
-      transition: initial !important;
-      padding-right: 3px !important;
-    }
+		#stylus button:not(.install)
+		{
+			color: #EEE !important;
+			background: linear-gradient(#777 6%, #505050 55%, #222 55%, #111) !important;
+			border: 1px solid #222 !important;
+			border-radius: 2px;
+			box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .25), inset 1px 1px 0px 0px #DDD, inset 0px 0px 1px 0px #666;
+			transition: initial !important;
+			padding-right: 3px !important;
+		}
 
-    #stylus button:not(.install)[disabled]
-    {
-      pointer-events: none;
-      color: graytext !important;
-    }
+		#stylus button:not(.install)[disabled]
+		{
+			pointer-events: none;
+			color: graytext !important;
+		}
 
-    #stylus button:not(.install):hover
-    {
-      color: #FFF !important;
-      background: linear-gradient(#888 6%, #555 55%, #333 55%, #222) !important;
-    }
+		#stylus button:not(.install):hover
+		{
+			color: #FFF !important;
+			background: linear-gradient(#888 6%, #555 55%, #333 55%, #222) !important;
+		}
 
-    #stylus button:not(.install):active
-    {
-      color: #DDD !important;
-      background: linear-gradient(#505050 6%, #333 55%, #1B1B1B 55%, #111) !important;
-      box-shadow: 0px 0px 0px 1px rgba(255,255,255,.25), inset 1px 0px 0px 0px #333, inset 1px 0px 1px 0px #666;
-      padding-right: 2px !important;
-      padding-left: 5px !important;
-    }
+		#stylus button:not(.install):active
+		{
+			color: #DDD !important;
+			background: linear-gradient(#505050 6%, #333 55%, #1B1B1B 55%, #111) !important;
+			box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .25), inset 1px 0px 0px 0px #333, inset 1px 0px 1px 0px #666;
+			padding-right: 2px !important;
+			padding-left: 5px !important;
+		}
 
-    #stylus .danger button:first-child,
-    #stylus-popup > #confirm button:first-child
-    {
-      background: linear-gradient( #b77 15%, #905050 55%, #900100 55%, #640100) !important;
-      border-color: #400;
-    }
+		#stylus .danger button:first-child,
+		#stylus-popup > #confirm button:first-child
+		{
+			background: linear-gradient( #bb7777 15%, #905050 55%, #900000 55%, #640000) !important;
+			border-color: #400;
+		}
 
-    #stylus .danger button:first-child:hover,
-    #stylus-popup > #confirm button:first-child:hover
-    {
-      background: linear-gradient(#c77 6%, #955 55%, #a00200 55%, #740200) !important;
-    }
+		#stylus .danger button:first-child:hover,
+		#stylus-popup > #confirm button:first-child:hover
+		{
+			background: linear-gradient(#e07777 6%, #b05050 55%, #b00000 55%, #800000) !important;
+		}
 
-    #stylus .danger button:first-child:active,
-    #stylus-popup > #confirm button:first-child:active
-    {
-      background: linear-gradient(#922 6%, #722 55%, #700 55%, #400) !important;
-    }
-  }
+		#stylus .danger button:first-child:active,
+		#stylus-popup > #confirm button:first-child:active
+		{
+			background: linear-gradient(#885050 6%, #733 55%, #600 55%, #500) !important;
+		}
+	}
 
-  if vButtons=='inverted'
-  {
-    #stylus button:not(.install)
-    {
-      filter: invert(1)
-    }
-  }
+	if vButtons=='inverted'
+	{
+		#stylus button:not(.install)
+		{
+			filter: invert(1)
+		}
+	}
 
-  .svg-icon:hover,
-  a:hover .svg-icon
-  {
-    fill: #FFF !important
-  }
+	.svg-icon:hover,
+	a:hover .svg-icon
+	{
+		fill: #FFF !important
+	}
 
-  .newUI .entry:hover .svg-icon
-  {
-    fill: #999
-  }
+	.newUI .entry:hover .svg-icon
+	{
+		fill: #999
+	}
 
-  .newUI .entry .svg-icon,
-  .svg-icon.select-arrow,
-  .svg-icon.settings,
-  .svg-icon.info,
-  .svg-icon,
-  #update-history > .svg-icon,
-  #sections-help
-  {
-    fill: #888
-  }
+	.newUI .entry .svg-icon,
+	.svg-icon.select-arrow,
+	.svg-icon.settings,
+	.svg-icon.info,
+	.svg-icon,
+	#update-history > .svg-icon,
+	#sections-help
+	{
+		fill: #888
+	}
 
-  #stylus #usercss-wiki > .svg-icon
-  {
-    fill: #666
-  }
+	#stylus #usercss-wiki > .svg-icon
+	{
+		fill: #666
+	}
 
-  #stylus body
-  {
-    max-width: unset
-  }
+	#stylus body
+	{
+		max-width: unset
+	}
 
-  .CodeMirror
-  {
-    border: inset #555 1px;
-    outline: none;
-  }
+	.CodeMirror
+	{
+		border: inset #555 1px;
+		outline: none;
+	}
 
-  .resize-grip
-  {
-    border-color: #AAA
-  }
+	.resize-grip
+	{
+		border-color: #AAA
+	}
 }
