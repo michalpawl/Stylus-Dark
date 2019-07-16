@@ -18,12 +18,17 @@
 {
 	#stylus body,
 	#notes,
-	#stylus input,
+	#stylus input:not(.slider),
 	#stylus select,
 	#stylus-popup > #installed
 	{
 		background-color: #111 !important
 	}
+    
+    #stylus input:not(.slider)[type="checkbox"]
+    {
+		background-color: #ccc !important
+    }
 
 	#header,
 	#help-popup,
@@ -105,7 +110,7 @@
 		border: none
 	}
 
-	#stylus input,
+	#stylus input:not(.slider),
 	#stylus select
 	{
 		border: 1px inset #666 !important;
