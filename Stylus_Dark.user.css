@@ -6,8 +6,7 @@
 @author         Michalpawl
 @preprocessor   stylus
 
-@var            select   vButtons    'Buttons'
-{
+@var            select   vButtons    'Buttons' {
     'Fancy'            : "fancy",
     'Default inverted' : "inverted",
     'Default'          : "default"
