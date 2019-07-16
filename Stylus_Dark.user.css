@@ -116,8 +116,7 @@
 		border: 1px inset #666 !important;
 	}
 
-	if vCorners
-	{
+	if vCorners {
 		.CodeMirror,
 		#help-popup,
 		#message-box > div,
@@ -139,8 +138,7 @@
 		padding-top: 1px
 	}
 
-	if vButtons=='fancy'
-	{
+	if vButtons=='fancy' {
 		.applies-value,
 		.remove-applies-to,
 		.test-regexp
