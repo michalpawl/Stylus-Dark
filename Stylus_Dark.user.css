@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Dark
 @namespace      michalpawl
-@version        0.1.3
+@version        0.1.4
 @description    Dark Stylus
 @author         Michalpawl
 @preprocessor   stylus
@@ -24,11 +24,6 @@
 	{
 		background-color: #111 !important
 	}
-    
-    #stylus input:not(.slider)[type="checkbox"]
-    {
-		background-color: #ccc !important
-    }
 
 	#header,
 	#help-popup,
@@ -87,6 +82,11 @@
 	#stylus a
 	{
 		color: #CCC !important
+	}
+
+	#stylus .checked
+	{
+		fill: #AAA
 	}
 
 	.Codemirror-hint
