@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Dark
 @namespace      michalpawl
-@version        0.1.4
+@version        0.1.5
 @description    Dark Stylus
 @author         Michalpawl
 @preprocessor   stylus
@@ -157,9 +157,10 @@
 			background: linear-gradient(#777 6%, #505050 55%, #222 55%, #111) !important;
 			border: 1px solid #222 !important;
 			border-radius: 2px;
-			box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .25), inset 1px 1px 0px 0px #DDD, inset 0px 0px 1px 0px #666;
+			box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .25), inset 1px 1px 0px 0px #DDD;
 			transition: initial !important;
-			padding-right: 3px !important;
+			padding: 3px 7px;
+			padding-right: 6px !important;
 		}
 
 		#stylus button:not(.install)[disabled]
@@ -178,9 +179,9 @@
 		{
 			color: #DDD !important;
 			background: linear-gradient(#505050 6%, #333 55%, #1B1B1B 55%, #111) !important;
-			box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .25), inset 1px 0px 0px 0px #333, inset 1px 0px 1px 0px #666;
-			padding-right: 2px !important;
-			padding-left: 5px !important;
+			box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .25), inset 1px 0px 0px 0px #333;
+			padding-right: 7px !important;
+			padding-left: 6px !important;
 		}
 
 		#stylus .danger button:first-child,
