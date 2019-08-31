@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Dark
 @namespace      michalpawl
-@version        0.1.5
+@version        0.1.6
 @description    Dark Stylus
 @author         Michalpawl
 @preprocessor   stylus
@@ -20,7 +20,8 @@
 	#notes,
 	#stylus input:not(.slider),
 	#stylus select,
-	#stylus-popup > #installed
+	#stylus-popup > #installed,
+	#stylus .dropdown-content
 	{
 		background-color: #111 !important
 	}
@@ -38,9 +39,15 @@
 	}
 
 	#hotkey-info div:last-child,
-	#confirm > div
+	#confirm > div,
+	#stylus select > optgroup
 	{
 		background-color: #333 !important
+	}
+
+	#stylus .dropdown-content a:hover
+	{
+		background-color: highlight
 	}
 
 	#confirm > div
@@ -120,7 +127,8 @@
 		.CodeMirror,
 		#help-popup,
 		#message-box > div,
-		#confirm > div
+		#confirm > div,
+		#stylus .dropdown-content
 		{
 			border-radius: 3px;
 			overflow: hidden;
@@ -159,8 +167,7 @@
 			border-radius: 2px;
 			box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .25), inset 1px 1px 0px 0px #DDD;
 			transition: initial !important;
-			padding: 3px 7px;
-			padding-right: 6px !important;
+			padding: 3px 6px 3px 7px;
 		}
 
 		#stylus button:not(.install)[disabled]
@@ -180,8 +187,8 @@
 			color: #DDD !important;
 			background: linear-gradient(#505050 6%, #333 55%, #1B1B1B 55%, #111) !important;
 			box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, .25), inset 1px 0px 0px 0px #333;
-			padding-right: 7px !important;
-			padding-left: 6px !important;
+			padding-right: 5px;
+			padding-left: 8px;
 		}
 
 		#stylus .danger button:first-child,
