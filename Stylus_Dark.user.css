@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Dark
 @namespace      michalpawl
-@version        0.1.6
+@version        0.1.7
 @description    Dark Stylus
 @author         Michalpawl
 @preprocessor   stylus
@@ -33,7 +33,8 @@
 	#stylus > #stylus-popup,
 	#hotkey-info div,
 	#installed div:hover,
-	#message-box > div
+	#message-box > div,
+	#options
 	{
 		background-color: #222 !important
 	}
@@ -55,14 +56,11 @@
 		border-color: black
 	}
 
-	#message-box-title
+	#message-box-title,
+	#help-popup .title,
+	#options-title
 	{
 		background-color: #1B4E4E
-	}
-
-	#help-popup .title
-	{
-		background-color: rgba(255, 255, 255, .1)
 	}
 
 	#message-box-buttons
@@ -128,7 +126,8 @@
 		#help-popup,
 		#message-box > div,
 		#confirm > div,
-		#stylus .dropdown-content
+		#stylus .dropdown-content,
+		#stylus-options
 		{
 			border-radius: 3px;
 			overflow: hidden;
