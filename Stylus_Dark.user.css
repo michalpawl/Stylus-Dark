@@ -99,7 +99,8 @@
 		color: #CCC
 	}
 
-	#confirm
+	#confirm,
+	.update::after
 	{
 		color: #000
 	}
