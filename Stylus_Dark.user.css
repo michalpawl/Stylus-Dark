@@ -100,7 +100,7 @@
 	}
 
 	#confirm,
-	.update::after
+	.updater-icons > :not(.check-update)::after
 	{
 		color: #000
 	}
