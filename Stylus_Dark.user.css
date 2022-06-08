@@ -141,11 +141,6 @@
 		}
 	}
 
-	#stylus select
-	{
-		padding-top: 1px
-	}
-
 	if vButtons=='fancy' {
 		.applies-value,
 		.remove-applies-to,
