@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Dark
 @namespace      michalpawl
-@version        0.1.8
+@version        0.1.9
 @description    Dark Stylus
 @author         Michalpawl
 @preprocessor   stylus
@@ -94,7 +94,7 @@
 		fill: #AAA
 	}
 
-	.Codemirror-hint
+	.CodeMirror-hint
 	{
 		color: #CCC
 	}
