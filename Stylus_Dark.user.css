@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Stylus Dark
 @namespace      michalpawl
-@version        0.2
+@version        0.2.1
 @description    Dark Stylus
 @author         Michalpawl
 @preprocessor   stylus
@@ -134,7 +134,7 @@
 			overflow: hidden;
 		}
 
-		#stylus input:not(.slider),
+		#stylus input:not(.slider):not([type="radio"]),
 		#stylus select
 		{
 			border-radius: 2px;
